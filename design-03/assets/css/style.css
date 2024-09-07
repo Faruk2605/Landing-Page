@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background-color: #1c1c1c; */
+  background: url(/assets/image/black_hole.jpg) no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+header .explore-bar form {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header .explore-bar form input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  padding-left: 12px;
+  /* border-radius: 100px; */
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #fff;
+}
+
+header .explore-bar form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 39px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  position: absolute;
+  /* border-radius: 5px; */
+  top: 0;
+  right: 0;
+}
+
+header .explore-bar form button i {
+  font-size: 26px;
+  color: #1c1c1c;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar ul li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+header .navbar .btn-gogreen {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* transform: translate(-200px, 80px); */
+  gap: 1em;
+}
+
+.hero .text-info {
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero .text-title {
+  color: #fff;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.hero .btn-watch {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-watch > i {
+  font-size: 28px;
+  /* margin: 20px; */
+  padding-left: 10px;
+  margin-bottom: 15px;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.hero .btn-watch:hover {
+  padding-left: 30px;
+}
+
+.hero .btn-watch:hover > i {
+  display: inline-block;
+  transform: rotate(40deg);
+}
